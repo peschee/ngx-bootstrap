@@ -8,18 +8,18 @@ import 'rxjs/add/operator/map';
   templateUrl: './top-menu.component.html'
 })
 export class TopMenuComponent implements AfterViewInit {
-  public appUrl: string;
-  public appHash: string;
-  public currentVersion: string;
-  public previousDocs: string[] = [];
-  public isLocalhost = false;
+  appUrl: string;
+  appHash: string;
+  currentVersion: string;
+  previousDocs: string[] = [];
+  isLocalhost = false;
 
-  public constructor(
+  constructor(
     private router: Router,
     private http: Http
   ) { }
 
-  public ngAfterViewInit(): any {
+  ngAfterViewInit(): any {
     // todo: remove this sh**
     this.isLocalhost = location.hostname === 'localhost';
     const getUrl = (router: Router) => {

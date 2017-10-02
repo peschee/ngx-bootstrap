@@ -10,7 +10,7 @@ export class DemoModalServiceFromComponent {
   bsModalRef: BsModalRef;
   constructor(private modalService: BsModalService) {}
 
-  public openModalWithComponent() {
+  openModalWithComponent() {
     let list = [
       'Open a modal with component',
       'Pass your data',
@@ -48,7 +48,7 @@ export class DemoModalServiceFromComponent {
   `
 })
 export class ModalContentComponent {
-  public title: string;
-  public list: any[] = [];
-  constructor(public bsModalRef: BsModalRef) {}
+  title: string;
+  list: any[] = [];
+  constructor(bsModalRef: BsModalRef) {}
 }
